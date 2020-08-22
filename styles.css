@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+/* --------------------------------------------
+---------------------basic--------------------
+---------------------------------------------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+    height:100vh;
+}
+
+/* --------------------------------------------
+---------------------HEADER--------------------
+---------------------------------------------- */
+header{
+    font-family: 'Open Sans', sans-serif;
+    font-size:11px;
+    text-align:center;
+    background-color:hsl(193, 100%, 96%);
+    background-image:url(images/bg-hero-mobile.svg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:135vh;
+}
+
+/* ------------NAV------------------ */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:2rem;
+}
+.nav-img{
+    width:150px;
+    height:23px;
+}
+.nav-link{
+    font-size:0.9rem;
+    padding:0.3rem 1rem;
+    border-radius:20px;
+    background:hsl(0, 0%, 100%);
+    box-shadow:0.2px 0.3px 5px hsl(208, 11%, 80%);
+    
+}
+.nav-link a {
+    text-decoration:none;
+    color:hsl(192, 100%, 9%);
+    font-weight:600;
+}
+
+/* ---------------Header-text-container------------ */
+
+
+.head-container{
+    margin:1em 1eem;
+    padding:1rem;
+}
+.main-text{
+    margin:3rem 0;
+    color:hsl(192, 100%, 9%);
+}
+.main-text h1{
+    font-size:2rem;
+    font-weight:600;
+    margin:2rem;
+}
+.main-text p{
+    font-size:1.2rem;
+    font-weight:400;
+}
+.btn{
+    text-align:center;
+    padding:0.9rem;
+    margin:3rem auto 3rem auto;
+    border-radius:20px;
+    background:hsl(322, 100%, 66%);
+    height:auto;
+    width:17rem;
+}
+.btn a {
+    color:hsl(193, 100%, 96%);
+    text-decoration:none;
+    font-size:0.9rem;
+    font-weight:400;
+}
+.head-img{
+    width:30rem;
+    height:25rem;
+    padding-right:20px;
+}
