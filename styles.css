@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap');
 /* --------------------------------------------
 ---------------------basic--------------------
 ---------------------------------------------- */
@@ -9,16 +9,16 @@
     box-sizing:border-box;
 }
 
-
-body{
-    height:100vh;
-}
+/* --------------------------------------------
+---------------------MOBILE--------------------
+---------------------------------------------- */
+@media(max-width:1023px){
 
 /* --------------------------------------------
 ---------------------HEADER--------------------
 ---------------------------------------------- */
 header{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size:11px;
     text-align:center;
     background-color:hsl(193, 100%, 96%);
@@ -26,7 +26,7 @@ header{
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
-    height:135vh;
+    overflow:hidden;
 }
 
 /* ------------NAV------------------ */
@@ -58,7 +58,7 @@ nav{
 
 
 .head-container{
-    margin:1em 1eem;
+    margin:1em 1rem;
     padding:1rem;
 }
 .main-text{
@@ -82,6 +82,7 @@ nav{
     background:hsl(322, 100%, 66%);
     height:auto;
     width:17rem;
+    /* cursor:pointer; */
 }
 .btn a {
     color:hsl(193, 100%, 96%);
@@ -90,7 +91,121 @@ nav{
     font-weight:400;
 }
 .head-img{
-    width:30rem;
-    height:25rem;
-    padding-right:20px;
+    width: 95%;
+}
+
+
+
+/* --------------------------------------------
+---------------------Body--------------------
+---------------------------------------------- */
+
+.main-body{
+    font-family: 'Open Sans', sans-serif;
+    font-size:11px;
+    background-color: rgb(255, 255, 255);
+    text-align:center;
+    
+}
+.card1, .card2, .card3{
+    margin:3rem 1rem;
+    padding:2rem;
+    box-shadow:0.1px 0.2px 3px hsl(208, 11%, 80%);
+    border-radius:20px;
+}
+/* .card3{
+    margin-bottom:20rem;
+} */
+.b-img{
+    width:80%;
+}
+.b-text{
+    margin:2rem 1rem;
+}
+.b-text h2{
+    font-weight:700;
+    font-size:1.3rem;
+    padding-bottom:1rem;
+}
+.b-text p{
+    font-weight:400;
+    font-size:1rem;
+    color:hsl(208, 11%, 55%);
+}
+
+.out-card{
+   width:95%;
+   margin:2rem auto;
+   padding:3rem;
+   border-radius:20px;
+   box-shadow:0.1px 0.2px 3px hsl(208, 11%, 80%);
+   background-color:rgb(255, 255, 255);
+   position:relative;
+   bottom:-110px;
+   
+}
+.out-card h2{
+    font-size:1.1rem;
+    font-weight:700;
+}
+.out-card .btn{
+    margin:2rem auto 1rem auto;
+}
+/* --------------------------------------------
+---------------------FOOTER--------------------
+---------------------------------------------- */
+
+
+
+footer{
+    background-color:hsl(192, 100%, 9%);
+    font-family: 'Open Sans', sans-serif;
+    font-size:11px;
+    
+}
+.foot-body{
+    padding:1rem;
+}
+.foot-body a{
+    text-decoration:none;
+    color:hsl(208, 11%, 55%);
+    font-size:1rem;
+    font-weight:400;
+    padding-left:2rem;
+    display:inline-block;
+}
+
+.f-logo{
+    margin:5rem 0 1rem 0;
+    width:8rem;
+}
+
+.loc,.phone,.mail{
+    margin:1rem 0;
+    display:flex;
+}
+.loc img{
+    width:40px;
+    height:25px;
+}
+.a-tags{
+    display:flex;
+    flex-flow:column;
+    margin:3rem 0;
+}
+.a-tags a{
+    font-size:.8rem;
+    padding:0.8rem 0;
+    font-weight:400;
+    color:hsl(193, 100%, 96%);
+    width:20%;
+}
+
+
+}
+
+@media(min-width:1024px){
+    body{
+        display:none;
+    }
 }
